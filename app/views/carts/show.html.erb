@@ -4,7 +4,7 @@
     <h1>My Cart</h1>
   </header>
   
-  <% if !enhanced_cart.any? %>
+  <% if enhanced_cart.empty? %>
  
     <div class="alert alert-info" role="alert">
       <h3> Your cart is empty! Please finish shopping and come back. <h3>
