@@ -17,4 +17,17 @@ RSpec.feature "AddToCarts", type: :feature do
         )
       end
     end
+
+    scenario "They see item added to cart" do
+      # ACT
+      visit root_path
+      page.find('.btn-primary', match: :first).click
+      
+      # VERIFY
+      expect(page).to have_content('My Cart (1)')
+  
+      # DEBUG 
+      # puts page.html
+      # save_screenshot
+    end
 end
