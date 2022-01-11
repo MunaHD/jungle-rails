@@ -10,6 +10,24 @@ RSpec.describe Product, type: :model do
       expect(new_product).to be_valid
     end
 
+    it 'should not be valid without name' do
+      new_product.name = nil
+      expect(new_product).not_to be_valid
+    end
+    it 'should not be valid without price' do
+      new_product.price_cents = nil
+      expect(new_product).not_to be_valid
+    end
+
+    it 'should not be valid without quantity' do
+      new_product.quantity = nil
+      expect(new_product).not_to be_valid
+    end
+
+    it 'should not be valid without category' do
+      new_product.category = nil
+      expect(new_product).not_to be_valid
+    end
     
   end
 end
