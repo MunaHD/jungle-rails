@@ -1,26 +1,29 @@
-<header class="page-header">
-  <h1>Admin Dashboard</h1>  
-</header>
-
-<div class="panel panel-default items">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Products</th>
-            <th>Categories</th>
-          </tr>
-        </thead>
-
-        <tfoot>
-        <tr>
-        <th>
-        <%= @product_count %>
-      </th>
-          <th>
-          <%= @categories_count %>
-          </th>
-        </tr>
-      </tfoot>
-      </table>
+<div class="jumbotron" style="background-color: #D9EDF7">
+  <h1>Admin Dashboard</h1>
 </div>
+
+<div class="panel panel-default panel-info col-sm-6">
+  <div class="panel-heading">
+    <h4 class="panel-title">Products</h4>
+  </div>
+  <div class="panel-body">
+    <h4><%= @product_count %></h4>
+  </div>
+</div>
+
+<div class="panel panel-default panel-info col-sm-6">
+  <div class="panel-heading">
+    <h4 class="panel-title">Categories</h4>
+  </div>
+  <div class="panel-body">
+    <h4><%= @categories_count %></h4>
+  </div>
+</div>
+
+
+
+
+
+
+
 

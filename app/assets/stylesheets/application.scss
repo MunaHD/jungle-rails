@@ -19,6 +19,10 @@ form.button_to {
 span .form-control {
   height: 55px;
 }
+
 h4.white {
   visibility: hidden;
 }
+
+$placeholder-opacity-max: 0.5;
+$placeholder-opacity-min: 0.2;
