@@ -19,9 +19,38 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-###
+### Landing Page
 
-!["   "]()
+An overview of all the available products on the website
+!["home-page"](https://github.com/MunaHD/jungle-rails/blob/master/docs/home-page.png?raw=true)
+
+### Product Categories
+
+users can find products by selecting categories
+!["Product Categories"](https://github.com/MunaHD/jungle-rails/blob/master/docs/products-by-category.png?raw=true)
+
+### Product Details
+
+Shows the product's description, quantity, price and reviews/ratings
+!["Product Details"](https://github.com/MunaHD/jungle-rails/blob/master/docs/product-details.png?raw=true)
+
+### Cart
+
+!["Cart"](https://github.com/MunaHD/jungle-rails/blob/master/docs/cart.png?raw=true)
+
+### Order Summary
+
+Gives an overview of the order the user made
+!["Order Summary"](https://github.com/MunaHD/jungle-rails/blob/master/docs/order-summary.png?raw=true)
+
+## Admin Pages
+
+Dashboard
+!["Dashboard"](https://github.com/MunaHD/jungle-rails/blob/master/docs/admin-dashboard.png?raw=true)
+Products
+!["Products"](https://github.com/MunaHD/jungle-rails/blob/master/docs/admin-product-page.png?raw=true)
+Categories
+!["Categories"](https://github.com/MunaHD/jungle-rails/blob/master/docs/admin-categories-page.png?raw=true)
 
 ## Additional Steps for Apple M1 Machines
 
