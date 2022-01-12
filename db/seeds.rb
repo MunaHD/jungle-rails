@@ -30,7 +30,6 @@ cat2 = Category.find_or_create_by! name: 'Electronics'
 cat3 = Category.find_or_create_by! name: 'Furniture'
 
 ## PRODUCTS
-
 puts "Re-creating Products ..."
 
 Product.destroy_all
@@ -133,4 +132,62 @@ cat3.products.create!({
 })
 
 
-puts "DONE!"
+puts "DONE PRODUCTS!"
+
+# USERS
+puts "Re-creating Users..."
+
+User.destroy_all
+
+user1 = User.create!({
+  name: 'First User',
+  email: 'first@email.com',
+  password: 'password',
+  password_confirmation: 'password'
+})
+
+user2 = User.create!({
+  name: 'Second User',
+  email: 'second@email.com',
+  password: 'password',
+  password_confirmation: 'password'
+})
+
+puts "DONE USERS!"
+
+# REVIEWS
+puts "Re-creating Reviews..."
+
+Review.destroy_all
+
+Review.create!({
+  product_id:  1,
+  user_id: 1,
+  description: 'Not nice!',
+  rating: 4
+})
+
+Review.create!({
+  product_id:  1,
+  user_id: 2,
+  description: 'Okay I guess.',
+  rating: 1
+})
+
+Review.create!({
+  product_id:  2,
+  user_id: 1,
+  description: 'Okay I guess.',
+  rating: 3
+})
+
+Review.create!({
+  product_id:  2,
+  user_id: 2,
+  description: 'Waste!',
+  rating: 1
+})
+
+puts "DONE REVIEWS!"
+
+
