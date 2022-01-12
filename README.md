@@ -2,12 +2,33 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Features
+
+- View all the store's available and sold out products on the home page.
+- Visit an individual product's page to view its details (price, quantity...) by clicking on the image, name or 'details' button.
+- Add items to your cart to then change quantity or remove items in the "Cart" section of the store.
+- Place an order using the stripe API and receive an order confirmation with order details.
+- Sign up/Login using your credentials to get Admin permissions: manage/add to your store's dashboard, categories and products.
+
+### Stretch Features
+
+- Add product reviews/raitings to product detail page
+- Add form for users to add review/raiting
+- show each product's average rating on the home page
+- Create feature spec for user_login
+
+## Final Product
+
+###
+
+!["   "]()
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
 1. Install ImageMagick `brew install imagemagick imagemagick@6 --build-from-source`
-2. Remove Gemfile.lock
-3. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
+1. Remove Gemfile.lock
+1. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
 
 ## Setup
 
@@ -28,6 +49,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
